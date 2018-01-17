@@ -20,7 +20,6 @@ $(document).ready(function() {
     })
       .done(function( data ) {
         $.each( data, function( i, item ) {
-            console.log(item);
             tblData += "<tr><td>"+ item.name + "</td><td>" + item.apy + "</td><td>" + item.earnings + "</td></tr>";
         });
         var tblHeaders = "<tr><th></th><th>Annual percentage Yield</th><th>Est. earnings for 1 Year</th></tr>";
